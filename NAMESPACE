@@ -1,0 +1,13 @@
+exportPattern("^[[:alpha:]]+")
+
+import("parallel")
+import("survival")
+import("randomForestSRC")
+import("abind")
+importFrom("stats", as.formula, p.adjust, quantile, runif, sd)
+
+export("IRSF.news",
+       "rsf.main", 
+       "rsf.int", 
+       "cph.main", 
+       "cph.int")
